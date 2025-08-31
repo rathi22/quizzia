@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "Berlin", "Madrid", "Rome"],
+    "answer": "Paris"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth", "Mars", "Venus", "Jupiter"],
+    "answer": "Mars"
+  },
+  {
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "options": ["William Shakespeare", "Mark Twain", "Charles Dickens", "Jane Austen"],
+    "answer": "William Shakespeare"
+  },
+  {
+    "question": "What is the largest mammal in the world?",
+    "options": ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "answer": "Blue Whale"
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Ag", "Au", "Gd", "Go"],
+    "answer": "Au"
+  },
+  {
+    "question": "Which continent is the Sahara Desert located on?",
+    "options": ["Asia", "Africa", "Australia", "South America"],
+    "answer": "Africa"
+  },
+  {
+    "question": "What is the fastest land animal?",
+    "options": ["Cheetah", "Leopard", "Lion", "Horse"],
+    "answer": "Cheetah"
+  },
+  {
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["China", "Japan", "Thailand", "Korea"],
+    "answer": "Japan"
+  },
+  {
+    "question": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "2"
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "question": "What is the square root of 64?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8"
+  },
+  {
+    "question": "Which instrument has keys, pedals, and strings?",
+    "options": ["Guitar", "Piano", "Violin", "Flute"],
+    "answer": "Piano"
+  },
+  {
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "options": ["China", "Brazil", "UK", "Russia"],
+    "answer": "Brazil"
+  },
+  {
+    "question": "Which blood type is known as the universal donor?",
+    "options": ["A", "B", "AB", "O Negative"],
+    "answer": "O Negative"
+  },
+  {
+    "question": "In which year did the Titanic sink?",
+    "options": ["1905", "1912", "1918", "1920"],
+    "answer": "1912"
+  },
+  {
+    "question": "Which is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "answer": "Diamond"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "answer": "Canberra"
+  }
+]
