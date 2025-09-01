@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import questionsData from "./data/questions.json";
-import { shuffleArray } from "./utils/shuffle";
 
 type Option = {
   text: string;
@@ -23,24 +21,17 @@ function App() {
   const [quizFinished, setQuizFinished] = useState(false);
 
   useEffect(() => {
-    loadQuestions();
+    fetchQuestions();
   }, []);
 
-  const loadQuestions = () => {
-    const formatted: Question[] = questionsData.map((q: any) => ({
-      question: q.question,
-      options: q.options.map((opt: string) => ({
-        text: opt,
-        isCorrect: opt === q.answer,
-      })),
-    }));
-
-    const shuffledQuestions = shuffleArray(formatted).map((q) => ({
-      ...q,
-      options: shuffleArray(q.options),
-    }));
-
-    setQuestions(shuffledQuestions);
+  const fetchQuestions = async () => {
+    try {
+      const res = await fetch("/api/quiz");
+      const data = await res.json();
+      setQuestions(data);
+    } catch (err) {
+      // Optionally handle error
+    }
   };
 
   const handleAnswer = (opt: Option) => {
@@ -63,7 +54,7 @@ function App() {
   };
 
   const handleRestart = () => {
-    loadQuestions();
+    fetchQuestions();
     setCurrentIndex(0);
     setSelected(null);
     setIsCorrect(null);
@@ -81,6 +72,7 @@ function App() {
         alignItems: "center",
         background: "linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)",
         fontFamily: "Arial, sans-serif",
+        color: "black",
       }}
     >
       <div
@@ -91,6 +83,7 @@ function App() {
           boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
           textAlign: "center",
           width: "400px",
+          color: "black",
         }}
       >
         <h1 style={{ marginBottom: "20px" }}>🎉 Quizzia 🎉</h1>
