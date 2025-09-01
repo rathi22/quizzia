@@ -1,0 +1,22 @@
+[
+  { "question": "Which planet spins on its side at a tilt of about 98 degrees?", "options": ["Uranus", "Neptune", "Saturn", "Jupiter"], "answer": "Uranus" },
+  { "question": "Which planet has a day longer than its year?", "options": ["Venus", "Mercury", "Mars", "Earth"], "answer": "Venus" },
+  { "question": "Which planet has the fastest winds in the Solar System?", "options": ["Neptune", "Jupiter", "Saturn", "Mars"], "answer": "Neptune" },
+  { "question": "Which planet rains diamonds due to extreme pressure?", "options": ["Uranus", "Neptune", "Saturn", "Venus"], "answer": "Neptune" },
+  { "question": "Which planet has the largest volcano in the Solar System?", "options": ["Mars", "Venus", "Earth", "Mercury"], "answer": "Mars" },
+  { "question": "Which planet could float in water because of its low density?", "options": ["Saturn", "Jupiter", "Uranus", "Mercury"], "answer": "Saturn" },
+  { "question": "Which planet is called Earth’s twin because of its size?", "options": ["Venus", "Mars", "Mercury", "Neptune"], "answer": "Venus" },
+  { "question": "Which planet has the Great Dark Spot storm?", "options": ["Neptune", "Jupiter", "Uranus", "Mars"], "answer": "Neptune" },
+  { "question": "Which planet rotates the fastest?", "options": ["Jupiter", "Saturn", "Earth", "Mars"], "answer": "Jupiter" },
+  { "question": "Which planet’s day is only 10 hours long?", "options": ["Jupiter", "Saturn", "Neptune", "Uranus"], "answer": "Jupiter" },
+  { "question": "Which planet rains sulfuric acid?", "options": ["Venus", "Mars", "Mercury", "Neptune"], "answer": "Venus" },
+  { "question": "Which planet is sometimes called the Morning Star?", "options": ["Venus", "Mercury", "Mars", "Jupiter"], "answer": "Venus" },
+  { "question": "Which dwarf planet lies in the asteroid belt?", "options": ["Ceres", "Pluto", "Eris", "Haumea"], "answer": "Ceres" },
+  { "question": "Which planet has the most moons discovered so far?", "options": ["Saturn", "Jupiter", "Neptune", "Uranus"], "answer": "Saturn" },
+  { "question": "Which planet’s year is only 88 Earth days?", "options": ["Mercury", "Venus", "Mars", "Neptune"], "answer": "Mercury" },
+  { "question": "Which planet glows greenish blue due to methane?", "options": ["Uranus", "Neptune", "Saturn", "Venus"], "answer": "Neptune" },
+  { "question": "Which planet’s surface temperature can melt lead?", "options": ["Venus", "Mercury", "Mars", "Saturn"], "answer": "Venus" },
+  { "question": "Which planet has the largest canyon system (Valles Marineris)?", "options": ["Mars", "Venus", "Earth", "Neptune"], "answer": "Mars" },
+  { "question": "Which planet is shrinking slowly as it cools?", "options": ["Mercury", "Mars", "Earth", "Uranus"], "answer": "Mercury" },
+  { "question": "Which planet is known for its beautiful icy rings?", "options": ["Saturn", "Jupiter", "Neptune", "Venus"], "answer": "Saturn" }
+]

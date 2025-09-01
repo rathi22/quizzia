@@ -1,0 +1,22 @@
+[
+  { "question": "Which element is liquid at room temperature besides Mercury?", "options": ["Bromine", "Gallium", "Cesium", "Chlorine"], "answer": "Bromine" },
+  { "question": "Which part of the brain controls balance?", "options": ["Cerebellum", "Cerebrum", "Medulla", "Hypothalamus"], "answer": "Cerebellum" },
+  { "question": "Which gas is used in neon signs?", "options": ["Neon", "Argon", "Helium", "Xenon"], "answer": "Neon" },
+  { "question": "What part of the human body contains the smallest bone?", "options": ["Ear", "Nose", "Finger", "Toe"], "answer": "Ear" },
+  { "question": "What is the powerhouse of the cell?", "options": ["Mitochondria", "Nucleus", "Ribosome", "Chloroplast"], "answer": "Mitochondria" },
+  { "question": "Which planet has the most similar day length to Earth?", "options": ["Mars", "Venus", "Mercury", "Saturn"], "answer": "Mars" },
+  { "question": "Which vitamin deficiency causes rickets?", "options": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"], "answer": "Vitamin D" },
+  { "question": "Which gas do plants absorb during photosynthesis?", "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"], "answer": "Carbon Dioxide" },
+  { "question": "Which blood type is the universal donor?", "options": ["O-", "O+", "AB+", "A+"], "answer": "O-" },
+  { "question": "Which is the hottest planet in the Solar System?", "options": ["Venus", "Mercury", "Mars", "Jupiter"], "answer": "Venus" },
+  { "question": "Which human organ regenerates itself?", "options": ["Liver", "Heart", "Lung", "Kidney"], "answer": "Liver" },
+  { "question": "Which gas do humans exhale most?", "options": ["Carbon Dioxide", "Nitrogen", "Oxygen", "Helium"], "answer": "Carbon Dioxide" },
+  { "question": "Which metal is liquid just above room temperature?", "options": ["Gallium", "Sodium", "Potassium", "Magnesium"], "answer": "Gallium" },
+  { "question": "Which scientist proposed the theory of relativity?", "options": ["Einstein", "Newton", "Galileo", "Hawking"], "answer": "Einstein" },
+  { "question": "What is the SI unit of force?", "options": ["Newton", "Pascal", "Joule", "Watt"], "answer": "Newton" },
+  { "question": "Which organelle is responsible for photosynthesis?", "options": ["Chloroplast", "Mitochondria", "Nucleus", "Golgi Apparatus"], "answer": "Chloroplast" },
+  { "question": "What is the pH of pure water at room temperature?", "options": ["7", "6", "8", "5"], "answer": "7" },
+  { "question": "Which layer of Earth is liquid?", "options": ["Outer Core", "Inner Core", "Mantle", "Crust"], "answer": "Outer Core" },
+  { "question": "Which blood cells fight infections?", "options": ["White Blood Cells", "Red Blood Cells", "Platelets", "Plasma"], "answer": "White Blood Cells" },
+  { "question": "What type of star is our Sun?", "options": ["Yellow Dwarf", "Red Giant", "White Dwarf", "Blue Giant"], "answer": "Yellow Dwarf" }
+]
