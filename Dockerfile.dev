@@ -1,15 +1,14 @@
-# NEW
 FROM node:20-alpine
 
-# Set working directory
 WORKDIR /app
 
-# Install dependencies (keep package.json in container)
-COPY client/package*.json ./
+# Copy only package.json first
+COPY package*.json ./
 RUN npm install
 
-# Copy everything else
-COPY client/ .
+# Copy the rest of the client source
+COPY . .
 
-# Start Vite in dev mode
+EXPOSE 5173
+
 CMD ["npm", "run", "dev"]
