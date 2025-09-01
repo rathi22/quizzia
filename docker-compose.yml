@@ -1,12 +1,12 @@
 services:
-  web:
+  client:
     build:
-      context: .
-      dockerfile: Dockerfile.dev
+      context: ./client
+      dockerfile: ../Dockerfile.dev   # 👈 tell Docker to use your dev Dockerfile
     ports:
       - "5173:5173"
     volumes:
-      - ./client:/app/client
-      - /app/client/node_modules
-    working_dir: /app/client
-    command: npm run dev
+      - ./client:/app                 # live reload
+      - /app/node_modules             # prevent overwriting node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true      # helps file watching in Docker
