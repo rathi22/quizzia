@@ -1,11 +1,4 @@
 import { useState, useEffect } from "react";
-import planetsData from "./data/planets.json";
-import animalsData from "./data/animals.json";
-import mathData from "./data/math.json";
-import scienceData from "./data/science.json";
-import sportsData from "./data/sports.json";
-import { shuffleArray } from "./utils/shuffle";
-
 type Option = {
   text: string;
   isCorrect: boolean;
@@ -16,13 +9,17 @@ type Question = {
   options: Option[];
 };
 
-const categories: Record<string, any[]> = {
-  Planets: planetsData,
-  Animals: animalsData,
-  Math: mathData,
-  Science: scienceData,
-  Sports: sportsData,
-};
+// Categories list for UI only
+const categories: string[] = [
+  "Planets",
+  "Animals",
+  "Math",
+  "Science",
+  "Sports",
+];
+
+// 👇 Add this line for backend API base URL
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5001";
 
 function App() {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -36,22 +33,39 @@ function App() {
   // ⏳ Timer state
   const [timeLeft, setTimeLeft] = useState(10);
 
-  const loadQuestions = (categoryName: string) => {
-    const rawData = categories[categoryName];
-    const formatted: Question[] = rawData.map((q: any) => ({
-      question: q.question,
-      options: shuffleArray(
-        q.options.map((opt: string) => ({
-          text: opt,
-          isCorrect: opt === q.answer,
-        }))
-      ),
-    }));
+  // 👇 Add loading and error state
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-    const limitedQuestions = shuffleArray(formatted).slice(0, 10);
-    setQuestions(limitedQuestions);
+  // Fetch questions from server
+  const loadQuestions = async (categoryName: string) => {
     setCategory(categoryName);
     setTimeLeft(10); // reset timer when quiz starts
+    setQuestions([]); // clear previous questions
+    setCurrentIndex(0);
+    setSelected(null);
+    setIsCorrect(null);
+    setScore(0);
+    setQuizFinished(false);
+    setLoading(true);
+    setError(null);
+
+    try {
+      // 👇 updated fetch to use API_BASE
+      const res = await fetch(
+        `${API_BASE}/api/quiz?category=${encodeURIComponent(categoryName)}`
+      );
+      if (!res.ok) {
+        throw new Error("Failed to fetch questions");
+      }
+      const data = await res.json();
+      setQuestions(data.questions);
+      setLoading(false);
+    } catch (err: any) {
+      setQuestions([]);
+      setLoading(false);
+      setError("Could not load questions. Please check your server.");
+    }
   };
 
   const handleAnswer = (opt: Option) => {
@@ -79,6 +93,7 @@ function App() {
     setScore(0);
     setQuizFinished(false);
     setTimeLeft(10); // reset timer
+    setQuestions([]);
   };
 
   // ⏳ Countdown logic
@@ -122,9 +137,33 @@ function App() {
       >
         <h1>🎉 Quizzia 🎉</h1>
 
+        {/* Show error if exists */}
+        {error && (
+          <div style={{ color: "red", marginBottom: "16px" }}>
+            {error}
+            <button
+              style={{
+                marginLeft: "10px",
+                padding: "4px 10px",
+                borderRadius: "6px",
+                border: "1px solid #f44336",
+                background: "#fff0f0",
+                color: "#f44336",
+                cursor: "pointer",
+              }}
+              onClick={() => {
+                setCategory(null);
+                setError(null);
+              }}
+            >
+              Back
+            </button>
+          </div>
+        )}
+
         {!category ? (
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-            {Object.keys(categories).map((cat) => (
+            {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => loadQuestions(cat)}
@@ -146,6 +185,10 @@ function App() {
                 {cat}
               </button>
             ))}
+          </div>
+        ) : loading ? (
+          <div>
+            <p>Loading questions...</p>
           </div>
         ) : quizFinished ? (
           <div>
@@ -236,7 +279,7 @@ function App() {
                   cursor: selected ? "pointer" : "not-allowed",
                 }}
               >
-                ⏭️ Next
+                Next
               </button>
             </div>
           )
