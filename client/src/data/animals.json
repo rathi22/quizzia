@@ -1,22 +1,182 @@
 [
-  { "question": "Which animal can hold its breath the longest under water?", "options": ["Sperm Whale", "Dolphin", "Shark", "Sea Lion"], "answer": "Sperm Whale" },
-  { "question": "Which animal has fingerprints almost identical to humans?", "options": ["Koala", "Chimpanzee", "Gorilla", "Sloth"], "answer": "Koala" },
-  { "question": "Which bird can mimic human speech best?", "options": ["Parrot", "Crow", "Myna", "Cockatoo"], "answer": "Parrot" },
-  { "question": "Which animal never sleeps?", "options": ["Bullfrog", "Shark", "Dolphin", "Ant"], "answer": "Bullfrog" },
-  { "question": "Which animal has blue blood?", "options": ["Octopus", "Crab", "Squid", "All of them"], "answer": "All of them" },
-  { "question": "Which animal can survive being frozen and thawed?", "options": ["Wood Frog", "Polar Bear", "Penguin", "Salamander"], "answer": "Wood Frog" },
-  { "question": "Which insect can lift objects 50 times its body weight?", "options": ["Ant", "Beetle", "Wasp", "Fly"], "answer": "Ant" },
-  { "question": "Which animal has the strongest bite force?", "options": ["Crocodile", "Shark", "Lion", "Tiger"], "answer": "Crocodile" },
-  { "question": "Which bird can fly backwards?", "options": ["Hummingbird", "Kingfisher", "Swallow", "Owl"], "answer": "Hummingbird" },
-  { "question": "Which animal is immortal (can live indefinitely)?", "options": ["Jellyfish", "Starfish", "Lobster", "Octopus"], "answer": "Jellyfish" },
-  { "question": "Which mammal lays eggs?", "options": ["Platypus", "Kangaroo", "Panda", "Otter"], "answer": "Platypus" },
-  { "question": "Which animal has the longest migration?", "options": ["Arctic Tern", "Whale Shark", "Wildebeest", "Monarch Butterfly"], "answer": "Arctic Tern" },
-  { "question": "Which animal can regrow its limbs?", "options": ["Starfish", "Octopus", "Gecko", "Lizard"], "answer": "Starfish" },
-  { "question": "Which animal can recognize itself in a mirror?", "options": ["Dolphin", "Dog", "Cat", "Horse"], "answer": "Dolphin" },
-  { "question": "Which animal has the largest eyes in the animal kingdom?", "options": ["Giant Squid", "Ostrich", "Horse", "Whale"], "answer": "Giant Squid" },
-  { "question": "Which animal can shoot blood from its eyes?", "options": ["Horned Lizard", "Snake", "Frog", "Spider"], "answer": "Horned Lizard" },
-  { "question": "Which animal has the longest tongue relative to its body?", "options": ["Chameleon", "Frog", "Anteater", "Snake"], "answer": "Chameleon" },
-  { "question": "Which animal can see ultraviolet light?", "options": ["Bees", "Cats", "Dogs", "Horses"], "answer": "Bees" },
-  { "question": "Which animal has the fastest punch?", "options": ["Mantis Shrimp", "Octopus", "Pistol Shrimp", "Squid"], "answer": "Mantis Shrimp" },
-  { "question": "Which animal sleeps only 2 hours a day?", "options": ["Giraffe", "Elephant", "Dolphin", "Shark"], "answer": "Giraffe" }
+  {
+    "question": "Which animal can hold its breath the longest under water?",
+    "options": [
+      { "text": "Sperm Whale", "isCorrect": true },
+      { "text": "Dolphin", "isCorrect": false },
+      { "text": "Shark", "isCorrect": false },
+      { "text": "Sea Lion", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has fingerprints almost identical to humans?",
+    "options": [
+      { "text": "Koala", "isCorrect": true },
+      { "text": "Chimpanzee", "isCorrect": false },
+      { "text": "Gorilla", "isCorrect": false },
+      { "text": "Sloth", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which bird can mimic human speech best?",
+    "options": [
+      { "text": "Parrot", "isCorrect": true },
+      { "text": "Crow", "isCorrect": false },
+      { "text": "Myna", "isCorrect": false },
+      { "text": "Cockatoo", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal never sleeps?",
+    "options": [
+      { "text": "Bullfrog", "isCorrect": true },
+      { "text": "Shark", "isCorrect": false },
+      { "text": "Dolphin", "isCorrect": false },
+      { "text": "Ant", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has blue blood?",
+    "options": [
+      { "text": "Octopus", "isCorrect": false },
+      { "text": "Crab", "isCorrect": false },
+      { "text": "Squid", "isCorrect": false },
+      { "text": "All of them", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "Which animal can survive being frozen and thawed?",
+    "options": [
+      { "text": "Wood Frog", "isCorrect": true },
+      { "text": "Polar Bear", "isCorrect": false },
+      { "text": "Penguin", "isCorrect": false },
+      { "text": "Salamander", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which insect can lift objects 50 times its body weight?",
+    "options": [
+      { "text": "Ant", "isCorrect": true },
+      { "text": "Beetle", "isCorrect": false },
+      { "text": "Wasp", "isCorrect": false },
+      { "text": "Fly", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has the strongest bite force?",
+    "options": [
+      { "text": "Crocodile", "isCorrect": true },
+      { "text": "Shark", "isCorrect": false },
+      { "text": "Lion", "isCorrect": false },
+      { "text": "Tiger", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which bird can fly backwards?",
+    "options": [
+      { "text": "Hummingbird", "isCorrect": true },
+      { "text": "Kingfisher", "isCorrect": false },
+      { "text": "Swallow", "isCorrect": false },
+      { "text": "Owl", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal is immortal (can live indefinitely)?",
+    "options": [
+      { "text": "Jellyfish", "isCorrect": true },
+      { "text": "Starfish", "isCorrect": false },
+      { "text": "Lobster", "isCorrect": false },
+      { "text": "Octopus", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which mammal lays eggs?",
+    "options": [
+      { "text": "Platypus", "isCorrect": true },
+      { "text": "Kangaroo", "isCorrect": false },
+      { "text": "Panda", "isCorrect": false },
+      { "text": "Otter", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has the longest migration?",
+    "options": [
+      { "text": "Arctic Tern", "isCorrect": true },
+      { "text": "Whale Shark", "isCorrect": false },
+      { "text": "Wildebeest", "isCorrect": false },
+      { "text": "Monarch Butterfly", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal can regrow its limbs?",
+    "options": [
+      { "text": "Starfish", "isCorrect": true },
+      { "text": "Octopus", "isCorrect": false },
+      { "text": "Gecko", "isCorrect": false },
+      { "text": "Lizard", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal can recognize itself in a mirror?",
+    "options": [
+      { "text": "Dolphin", "isCorrect": true },
+      { "text": "Dog", "isCorrect": false },
+      { "text": "Cat", "isCorrect": false },
+      { "text": "Horse", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has the largest eyes in the animal kingdom?",
+    "options": [
+      { "text": "Giant Squid", "isCorrect": true },
+      { "text": "Ostrich", "isCorrect": false },
+      { "text": "Horse", "isCorrect": false },
+      { "text": "Whale", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal can shoot blood from its eyes?",
+    "options": [
+      { "text": "Horned Lizard", "isCorrect": true },
+      { "text": "Snake", "isCorrect": false },
+      { "text": "Frog", "isCorrect": false },
+      { "text": "Spider", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has the longest tongue relative to its body?",
+    "options": [
+      { "text": "Chameleon", "isCorrect": true },
+      { "text": "Frog", "isCorrect": false },
+      { "text": "Anteater", "isCorrect": false },
+      { "text": "Snake", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal can see ultraviolet light?",
+    "options": [
+      { "text": "Bees", "isCorrect": true },
+      { "text": "Cats", "isCorrect": false },
+      { "text": "Dogs", "isCorrect": false },
+      { "text": "Horses", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal has the fastest punch?",
+    "options": [
+      { "text": "Mantis Shrimp", "isCorrect": true },
+      { "text": "Octopus", "isCorrect": false },
+      { "text": "Pistol Shrimp", "isCorrect": false },
+      { "text": "Squid", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which animal sleeps only 2 hours a day?",
+    "options": [
+      { "text": "Giraffe", "isCorrect": true },
+      { "text": "Elephant", "isCorrect": false },
+      { "text": "Dolphin", "isCorrect": false },
+      { "text": "Shark", "isCorrect": false }
+    ]
+  }
 ]

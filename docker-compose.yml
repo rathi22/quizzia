@@ -4,10 +4,9 @@ services:
   server:
     build: ./server
     ports:
-      - "5001:5000"
+      - "5000:5000"
     volumes:
       - ./client/src/data:/app/data 
-      - /app/node_modules   
     environment:
       - NODE_ENV=production
     restart: unless-stopped
@@ -15,15 +14,17 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: ../Dockerfile.dev   
+      dockerfile: ../Dockerfile.dev     # 👈 use the one in project root
     ports:
       - "5173:5173"
     volumes:
-      - ./client:/app                 # live reload
-      - /app/node_modules             # prevent overwriting node_modules
+      - ./client:/app             # live reload
+      - /app/node_modules         # prevent overwriting node_modules
     env_file:
-      - ./client/.env                 # 👈 loads VITE_API_URL into the container
+      - ./client/.env
     environment:
       - VITE_API_URL=http://localhost:5001
-      - CHOKIDAR_USEPOLLING=true      # helps file watching in Docker
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
     restart: unless-stopped

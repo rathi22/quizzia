@@ -1,0 +1,56 @@
+/* Lobby styles */
+.lobby-container {
+  min-height: 100vh;
+  text-align: center;
+  color: #0c0c0c;
+}
+
+.lobby-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background: #6a1b9a;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category-card {
+  background: #ba68c8;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card.active {
+  background: #8e24aa;
+}

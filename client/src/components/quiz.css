@@ -1,0 +1,130 @@
+/* Quiz container */
+.quiz-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Question styles */
+.question-text {
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  color: #4a148c; /* deep purple for high contrast */
+}
+
+.question-progress {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d81b60; /* pink for visibility */
+}
+
+.category-info {
+  font-size: 1.1rem;
+  color: #6a1b9a; /* medium purple */
+  margin-bottom: 1rem;
+}
+
+/* Timer styles */
+.timer-bar {
+  height: 12px;
+  background: #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.timer-fill {
+  height: 100%;
+  background: #ff4081;
+  transition: width 1s linear;
+}
+
+/* Options grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.option-btn {
+  background: #ba68c8;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.option-btn:hover {
+  transform: scale(1.05);
+  background: #8e24aa;
+}
+
+/* Leaderboard */
+.leaderboard-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4a148c;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.highlight-row {
+  background: #ffe082;
+  font-weight: bold;
+}
+
+.exit-btn {
+  margin-top: 1.5rem;
+  background: #6a1b9a;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Room info (Room code) */
+.room-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000; /* deep blue */
+  margin-bottom: 0.5rem;
+}
+
+/* Player info (Your name) */
+.player-info {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3c0058; /* green */
+  margin-bottom: 0.5rem;
+}
+
+.exit-btn:hover {
+  background: #4a148c;
+}
