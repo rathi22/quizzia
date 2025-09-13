@@ -1,22 +1,182 @@
 [
-  { "question": "Which element is liquid at room temperature besides Mercury?", "options": ["Bromine", "Gallium", "Cesium", "Chlorine"], "answer": "Bromine" },
-  { "question": "Which part of the brain controls balance?", "options": ["Cerebellum", "Cerebrum", "Medulla", "Hypothalamus"], "answer": "Cerebellum" },
-  { "question": "Which gas is used in neon signs?", "options": ["Neon", "Argon", "Helium", "Xenon"], "answer": "Neon" },
-  { "question": "What part of the human body contains the smallest bone?", "options": ["Ear", "Nose", "Finger", "Toe"], "answer": "Ear" },
-  { "question": "What is the powerhouse of the cell?", "options": ["Mitochondria", "Nucleus", "Ribosome", "Chloroplast"], "answer": "Mitochondria" },
-  { "question": "Which planet has the most similar day length to Earth?", "options": ["Mars", "Venus", "Mercury", "Saturn"], "answer": "Mars" },
-  { "question": "Which vitamin deficiency causes rickets?", "options": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"], "answer": "Vitamin D" },
-  { "question": "Which gas do plants absorb during photosynthesis?", "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"], "answer": "Carbon Dioxide" },
-  { "question": "Which blood type is the universal donor?", "options": ["O-", "O+", "AB+", "A+"], "answer": "O-" },
-  { "question": "Which is the hottest planet in the Solar System?", "options": ["Venus", "Mercury", "Mars", "Jupiter"], "answer": "Venus" },
-  { "question": "Which human organ regenerates itself?", "options": ["Liver", "Heart", "Lung", "Kidney"], "answer": "Liver" },
-  { "question": "Which gas do humans exhale most?", "options": ["Carbon Dioxide", "Nitrogen", "Oxygen", "Helium"], "answer": "Carbon Dioxide" },
-  { "question": "Which metal is liquid just above room temperature?", "options": ["Gallium", "Sodium", "Potassium", "Magnesium"], "answer": "Gallium" },
-  { "question": "Which scientist proposed the theory of relativity?", "options": ["Einstein", "Newton", "Galileo", "Hawking"], "answer": "Einstein" },
-  { "question": "What is the SI unit of force?", "options": ["Newton", "Pascal", "Joule", "Watt"], "answer": "Newton" },
-  { "question": "Which organelle is responsible for photosynthesis?", "options": ["Chloroplast", "Mitochondria", "Nucleus", "Golgi Apparatus"], "answer": "Chloroplast" },
-  { "question": "What is the pH of pure water at room temperature?", "options": ["7", "6", "8", "5"], "answer": "7" },
-  { "question": "Which layer of Earth is liquid?", "options": ["Outer Core", "Inner Core", "Mantle", "Crust"], "answer": "Outer Core" },
-  { "question": "Which blood cells fight infections?", "options": ["White Blood Cells", "Red Blood Cells", "Platelets", "Plasma"], "answer": "White Blood Cells" },
-  { "question": "What type of star is our Sun?", "options": ["Yellow Dwarf", "Red Giant", "White Dwarf", "Blue Giant"], "answer": "Yellow Dwarf" }
+  {
+    "question": "Which element is liquid at room temperature besides Mercury?",
+    "options": [
+      { "text": "Bromine", "isCorrect": true },
+      { "text": "Gallium", "isCorrect": false },
+      { "text": "Cesium", "isCorrect": false },
+      { "text": "Chlorine", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which part of the brain controls balance?",
+    "options": [
+      { "text": "Cerebellum", "isCorrect": true },
+      { "text": "Cerebrum", "isCorrect": false },
+      { "text": "Medulla", "isCorrect": false },
+      { "text": "Hypothalamus", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which gas is used in neon signs?",
+    "options": [
+      { "text": "Neon", "isCorrect": true },
+      { "text": "Argon", "isCorrect": false },
+      { "text": "Helium", "isCorrect": false },
+      { "text": "Xenon", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What part of the human body contains the smallest bone?",
+    "options": [
+      { "text": "Ear", "isCorrect": true },
+      { "text": "Nose", "isCorrect": false },
+      { "text": "Finger", "isCorrect": false },
+      { "text": "Toe", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "options": [
+      { "text": "Mitochondria", "isCorrect": true },
+      { "text": "Nucleus", "isCorrect": false },
+      { "text": "Ribosome", "isCorrect": false },
+      { "text": "Chloroplast", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which planet has the most similar day length to Earth?",
+    "options": [
+      { "text": "Mars", "isCorrect": true },
+      { "text": "Venus", "isCorrect": false },
+      { "text": "Mercury", "isCorrect": false },
+      { "text": "Saturn", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which vitamin deficiency causes rickets?",
+    "options": [
+      { "text": "Vitamin D", "isCorrect": true },
+      { "text": "Vitamin A", "isCorrect": false },
+      { "text": "Vitamin C", "isCorrect": false },
+      { "text": "Vitamin K", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "options": [
+      { "text": "Carbon Dioxide", "isCorrect": true },
+      { "text": "Oxygen", "isCorrect": false },
+      { "text": "Nitrogen", "isCorrect": false },
+      { "text": "Hydrogen", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which blood type is the universal donor?",
+    "options": [
+      { "text": "O-", "isCorrect": true },
+      { "text": "O+", "isCorrect": false },
+      { "text": "AB+", "isCorrect": false },
+      { "text": "A+", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which is the hottest planet in the Solar System?",
+    "options": [
+      { "text": "Venus", "isCorrect": true },
+      { "text": "Mercury", "isCorrect": false },
+      { "text": "Mars", "isCorrect": false },
+      { "text": "Jupiter", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which human organ regenerates itself?",
+    "options": [
+      { "text": "Liver", "isCorrect": true },
+      { "text": "Heart", "isCorrect": false },
+      { "text": "Lung", "isCorrect": false },
+      { "text": "Kidney", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which gas do humans exhale most?",
+    "options": [
+      { "text": "Carbon Dioxide", "isCorrect": true },
+      { "text": "Nitrogen", "isCorrect": false },
+      { "text": "Oxygen", "isCorrect": false },
+      { "text": "Helium", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which metal is liquid just above room temperature?",
+    "options": [
+      { "text": "Gallium", "isCorrect": true },
+      { "text": "Sodium", "isCorrect": false },
+      { "text": "Potassium", "isCorrect": false },
+      { "text": "Magnesium", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which scientist proposed the theory of relativity?",
+    "options": [
+      { "text": "Einstein", "isCorrect": true },
+      { "text": "Newton", "isCorrect": false },
+      { "text": "Galileo", "isCorrect": false },
+      { "text": "Hawking", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": [
+      { "text": "Newton", "isCorrect": true },
+      { "text": "Pascal", "isCorrect": false },
+      { "text": "Joule", "isCorrect": false },
+      { "text": "Watt", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which organelle is responsible for photosynthesis?",
+    "options": [
+      { "text": "Chloroplast", "isCorrect": true },
+      { "text": "Mitochondria", "isCorrect": false },
+      { "text": "Nucleus", "isCorrect": false },
+      { "text": "Golgi Apparatus", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the pH of pure water at room temperature?",
+    "options": [
+      { "text": "7", "isCorrect": true },
+      { "text": "6", "isCorrect": false },
+      { "text": "8", "isCorrect": false },
+      { "text": "5", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which layer of Earth is liquid?",
+    "options": [
+      { "text": "Outer Core", "isCorrect": true },
+      { "text": "Inner Core", "isCorrect": false },
+      { "text": "Mantle", "isCorrect": false },
+      { "text": "Crust", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which blood cells fight infections?",
+    "options": [
+      { "text": "White Blood Cells", "isCorrect": true },
+      { "text": "Red Blood Cells", "isCorrect": false },
+      { "text": "Platelets", "isCorrect": false },
+      { "text": "Plasma", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What type of star is our Sun?",
+    "options": [
+      { "text": "Yellow Dwarf", "isCorrect": true },
+      { "text": "Red Giant", "isCorrect": false },
+      { "text": "White Dwarf", "isCorrect": false },
+      { "text": "Blue Giant", "isCorrect": false }
+    ]
+  }
 ]

@@ -6,6 +6,8 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
+RUN cat package.json
+
 # Copy the rest of the client source
 COPY . .
 

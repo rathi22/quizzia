@@ -1,22 +1,182 @@
 [
-  { "question": "What is the only even prime number?", "options": ["2", "4", "6", "8"], "answer": "2" },
-  { "question": "What is 111 × 111?", "options": ["12321", "11111", "12121", "12221"], "answer": "12321" },
-  { "question": "What is the sum of all interior angles of a pentagon?", "options": ["360°", "540°", "720°", "900°"], "answer": "540°" },
-  { "question": "What is the probability of rolling a 6 on a fair die?", "options": ["1/2", "1/3", "1/6", "1/12"], "answer": "1/6" },
-  { "question": "What is the smallest 3-digit prime number?", "options": ["101", "103", "107", "109"], "answer": "101" },
-  { "question": "What is the value of π² rounded to 2 decimals?", "options": ["9.86", "10.12", "8.99", "11.01"], "answer": "9.86" },
-  { "question": "If x + y = 10 and x − y = 4, what is x?", "options": ["7", "6", "8", "5"], "answer": "7" },
-  { "question": "What is the square root of 2025?", "options": ["45", "55", "35", "65"], "answer": "45" },
-  { "question": "What is the binary of decimal 13?", "options": ["1010", "1101", "1110", "1001"], "answer": "1101" },
-  { "question": "What is the golden ratio (φ) approximately?", "options": ["1.41", "1.61", "1.73", "1.82"], "answer": "1.61" },
-  { "question": "If you flip 2 coins, what is the probability of 2 heads?", "options": ["1/2", "1/3", "1/4", "1/5"], "answer": "1/4" },
-  { "question": "What is the derivative of sin(x)?", "options": ["cos(x)", "-sin(x)", "-cos(x)", "tan(x)"], "answer": "cos(x)" },
-  { "question": "What is the integral of 1/x dx?", "options": ["ln|x| + C", "x²/2 + C", "1/(x²) + C", "e^x + C"], "answer": "ln|x| + C" },
-  { "question": "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, ?", "options": ["7", "8", "9", "10"], "answer": "8" },
-  { "question": "What is the perimeter of a square with side 13?", "options": ["39", "52", "26", "46"], "answer": "52" },
-  { "question": "What is the value of 7!", "options": ["5040", "720", "40320", "120"], "answer": "5040" },
-  { "question": "If a triangle has sides 3, 4, 5, what kind of triangle is it?", "options": ["Equilateral", "Isosceles", "Right-angled", "Scalene"], "answer": "Right-angled" },
-  { "question": "Which branch of math deals with rates of change?", "options": ["Geometry", "Calculus", "Algebra", "Trigonometry"], "answer": "Calculus" },
-  { "question": "What is the sum of first 100 natural numbers?", "options": ["5050", "5000", "4950", "5150"], "answer": "5050" },
-  { "question": "What is √(-1) called in mathematics?", "options": ["Imaginary unit i", "Undefined", "Zero", "Infinity"], "answer": "Imaginary unit i" }
+  {
+    "question": "What is the only even prime number?",
+    "options": [
+      { "text": "2", "isCorrect": true },
+      { "text": "4", "isCorrect": false },
+      { "text": "6", "isCorrect": false },
+      { "text": "8", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is 111 × 111?",
+    "options": [
+      { "text": "12321", "isCorrect": true },
+      { "text": "11111", "isCorrect": false },
+      { "text": "12121", "isCorrect": false },
+      { "text": "12221", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the sum of all interior angles of a pentagon?",
+    "options": [
+      { "text": "360°", "isCorrect": false },
+      { "text": "540°", "isCorrect": true },
+      { "text": "720°", "isCorrect": false },
+      { "text": "900°", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the probability of rolling a 6 on a fair die?",
+    "options": [
+      { "text": "1/2", "isCorrect": false },
+      { "text": "1/3", "isCorrect": false },
+      { "text": "1/6", "isCorrect": true },
+      { "text": "1/12", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the smallest 3-digit prime number?",
+    "options": [
+      { "text": "101", "isCorrect": true },
+      { "text": "103", "isCorrect": false },
+      { "text": "107", "isCorrect": false },
+      { "text": "109", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the value of π² rounded to 2 decimals?",
+    "options": [
+      { "text": "9.86", "isCorrect": true },
+      { "text": "10.12", "isCorrect": false },
+      { "text": "8.99", "isCorrect": false },
+      { "text": "11.01", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "If x + y = 10 and x − y = 4, what is x?",
+    "options": [
+      { "text": "7", "isCorrect": true },
+      { "text": "6", "isCorrect": false },
+      { "text": "8", "isCorrect": false },
+      { "text": "5", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the square root of 2025?",
+    "options": [
+      { "text": "45", "isCorrect": true },
+      { "text": "55", "isCorrect": false },
+      { "text": "35", "isCorrect": false },
+      { "text": "65", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the binary of decimal 13?",
+    "options": [
+      { "text": "1010", "isCorrect": false },
+      { "text": "1101", "isCorrect": true },
+      { "text": "1110", "isCorrect": false },
+      { "text": "1001", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the golden ratio (φ) approximately?",
+    "options": [
+      { "text": "1.41", "isCorrect": false },
+      { "text": "1.61", "isCorrect": true },
+      { "text": "1.73", "isCorrect": false },
+      { "text": "1.82", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "If you flip 2 coins, what is the probability of 2 heads?",
+    "options": [
+      { "text": "1/2", "isCorrect": false },
+      { "text": "1/3", "isCorrect": false },
+      { "text": "1/4", "isCorrect": true },
+      { "text": "1/5", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the derivative of sin(x)?",
+    "options": [
+      { "text": "cos(x)", "isCorrect": true },
+      { "text": "-sin(x)", "isCorrect": false },
+      { "text": "-cos(x)", "isCorrect": false },
+      { "text": "tan(x)", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the integral of 1/x dx?",
+    "options": [
+      { "text": "ln|x| + C", "isCorrect": true },
+      { "text": "x²/2 + C", "isCorrect": false },
+      { "text": "1/(x²) + C", "isCorrect": false },
+      { "text": "e^x + C", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, ?",
+    "options": [
+      { "text": "7", "isCorrect": false },
+      { "text": "8", "isCorrect": true },
+      { "text": "9", "isCorrect": false },
+      { "text": "10", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the perimeter of a square with side 13?",
+    "options": [
+      { "text": "39", "isCorrect": false },
+      { "text": "52", "isCorrect": true },
+      { "text": "26", "isCorrect": false },
+      { "text": "46", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the value of 7!",
+    "options": [
+      { "text": "5040", "isCorrect": true },
+      { "text": "720", "isCorrect": false },
+      { "text": "40320", "isCorrect": false },
+      { "text": "120", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "If a triangle has sides 3, 4, 5, what kind of triangle is it?",
+    "options": [
+      { "text": "Equilateral", "isCorrect": false },
+      { "text": "Isosceles", "isCorrect": false },
+      { "text": "Right-angled", "isCorrect": true },
+      { "text": "Scalene", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which branch of math deals with rates of change?",
+    "options": [
+      { "text": "Geometry", "isCorrect": false },
+      { "text": "Calculus", "isCorrect": true },
+      { "text": "Algebra", "isCorrect": false },
+      { "text": "Trigonometry", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the sum of first 100 natural numbers?",
+    "options": [
+      { "text": "5050", "isCorrect": true },
+      { "text": "5000", "isCorrect": false },
+      { "text": "4950", "isCorrect": false },
+      { "text": "5150", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is √(-1) called in mathematics?",
+    "options": [
+      { "text": "Imaginary unit i", "isCorrect": true },
+      { "text": "Undefined", "isCorrect": false },
+      { "text": "Zero", "isCorrect": false },
+      { "text": "Infinity", "isCorrect": false }
+    ]
+  }
 ]

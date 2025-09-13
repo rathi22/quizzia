@@ -1,22 +1,182 @@
 [
-  { "question": "Which country hosted the first modern Olympics in 1896?", "options": ["Greece", "France", "UK", "USA"], "answer": "Greece" },
-  { "question": "Which athlete has won the most Olympic medals?", "options": ["Michael Phelps", "Usain Bolt", "Larisa Latynina", "Carl Lewis"], "answer": "Michael Phelps" },
-  { "question": "In which sport do players perform a slam dunk?", "options": ["Basketball", "Volleyball", "Tennis", "Handball"], "answer": "Basketball" },
-  { "question": "Which sport uses a shuttlecock?", "options": ["Badminton", "Squash", "Tennis", "Table Tennis"], "answer": "Badminton" },
-  { "question": "Which country won the most FIFA World Cups?", "options": ["Brazil", "Germany", "Italy", "Argentina"], "answer": "Brazil" },
-  { "question": "How many points is a touchdown worth in American football?", "options": ["6", "3", "7", "2"], "answer": "6" },
-  { "question": "Which female tennis player has won the most Grand Slam titles?", "options": ["Serena Williams", "Steffi Graf", "Margaret Court", "Martina Navratilova"], "answer": "Margaret Court" },
-  { "question": "Which sport is known as the ‘king of sports’?", "options": ["Soccer (Football)", "Cricket", "Basketball", "Rugby"], "answer": "Soccer (Football)" },
-  { "question": "Which country invented ice hockey?", "options": ["Canada", "Russia", "Sweden", "USA"], "answer": "Canada" },
-  { "question": "What is the distance of a marathon?", "options": ["42.195 km", "40 km", "26 km", "30 km"], "answer": "42.195 km" },
-  { "question": "Which cricketer is called the 'God of Cricket'?", "options": ["Sachin Tendulkar", "Virat Kohli", "Brian Lara", "Ricky Ponting"], "answer": "Sachin Tendulkar" },
-  { "question": "Which sport awards the Stanley Cup?", "options": ["Ice Hockey", "Baseball", "Basketball", "Football"], "answer": "Ice Hockey" },
-  { "question": "Which boxer was nicknamed 'The Greatest'?", "options": ["Muhammad Ali", "Mike Tyson", "Joe Frazier", "George Foreman"], "answer": "Muhammad Ali" },
-  { "question": "Which country won the first Cricket World Cup in 1975?", "options": ["West Indies", "Australia", "England", "India"], "answer": "West Indies" },
-  { "question": "Which NBA player is known as 'King James'?", "options": ["LeBron James", "Kobe Bryant", "Michael Jordan", "Shaquille O'Neal"], "answer": "LeBron James" },
-  { "question": "Which sport uses terms like birdie, eagle, and bogey?", "options": ["Golf", "Tennis", "Squash", "Badminton"], "answer": "Golf" },
-  { "question": "Which country hosted the 2016 Summer Olympics?", "options": ["Brazil", "China", "UK", "USA"], "answer": "Brazil" },
-  { "question": "Which country dominates table tennis championships?", "options": ["China", "Japan", "South Korea", "Germany"], "answer": "China" },
-  { "question": "What color flag is waved to start a Formula 1 race?", "options": ["Green", "Red", "Yellow", "Blue"], "answer": "Green" },
-  { "question": "Which sport’s trophy is called the Vince Lombardi Trophy?", "options": ["American Football", "Basketball", "Baseball", "Ice Hockey"], "answer": "American Football" }
+  {
+    "question": "Which country hosted the first modern Olympics in 1896?",
+    "options": [
+      { "text": "Greece", "isCorrect": true },
+      { "text": "France", "isCorrect": false },
+      { "text": "UK", "isCorrect": false },
+      { "text": "USA", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which athlete has won the most Olympic medals?",
+    "options": [
+      { "text": "Michael Phelps", "isCorrect": true },
+      { "text": "Usain Bolt", "isCorrect": false },
+      { "text": "Larisa Latynina", "isCorrect": false },
+      { "text": "Carl Lewis", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "In which sport do players perform a slam dunk?",
+    "options": [
+      { "text": "Basketball", "isCorrect": true },
+      { "text": "Volleyball", "isCorrect": false },
+      { "text": "Tennis", "isCorrect": false },
+      { "text": "Handball", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which sport uses a shuttlecock?",
+    "options": [
+      { "text": "Badminton", "isCorrect": true },
+      { "text": "Squash", "isCorrect": false },
+      { "text": "Tennis", "isCorrect": false },
+      { "text": "Table Tennis", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which country won the most FIFA World Cups?",
+    "options": [
+      { "text": "Brazil", "isCorrect": true },
+      { "text": "Germany", "isCorrect": false },
+      { "text": "Italy", "isCorrect": false },
+      { "text": "Argentina", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "How many points is a touchdown worth in American football?",
+    "options": [
+      { "text": "6", "isCorrect": true },
+      { "text": "3", "isCorrect": false },
+      { "text": "7", "isCorrect": false },
+      { "text": "2", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which female tennis player has won the most Grand Slam titles?",
+    "options": [
+      { "text": "Serena Williams", "isCorrect": false },
+      { "text": "Steffi Graf", "isCorrect": false },
+      { "text": "Margaret Court", "isCorrect": true },
+      { "text": "Martina Navratilova", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which sport is known as the ‘king of sports’?",
+    "options": [
+      { "text": "Soccer (Football)", "isCorrect": true },
+      { "text": "Cricket", "isCorrect": false },
+      { "text": "Basketball", "isCorrect": false },
+      { "text": "Rugby", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which country invented ice hockey?",
+    "options": [
+      { "text": "Canada", "isCorrect": true },
+      { "text": "Russia", "isCorrect": false },
+      { "text": "Sweden", "isCorrect": false },
+      { "text": "USA", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the distance of a marathon?",
+    "options": [
+      { "text": "42.195 km", "isCorrect": true },
+      { "text": "40 km", "isCorrect": false },
+      { "text": "26 km", "isCorrect": false },
+      { "text": "30 km", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which cricketer is called the 'God of Cricket'?",
+    "options": [
+      { "text": "Sachin Tendulkar", "isCorrect": true },
+      { "text": "Virat Kohli", "isCorrect": false },
+      { "text": "Brian Lara", "isCorrect": false },
+      { "text": "Ricky Ponting", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which sport awards the Stanley Cup?",
+    "options": [
+      { "text": "Ice Hockey", "isCorrect": true },
+      { "text": "Baseball", "isCorrect": false },
+      { "text": "Basketball", "isCorrect": false },
+      { "text": "Football", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which boxer was nicknamed 'The Greatest'?",
+    "options": [
+      { "text": "Muhammad Ali", "isCorrect": true },
+      { "text": "Mike Tyson", "isCorrect": false },
+      { "text": "Joe Frazier", "isCorrect": false },
+      { "text": "George Foreman", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which country won the first Cricket World Cup in 1975?",
+    "options": [
+      { "text": "West Indies", "isCorrect": true },
+      { "text": "Australia", "isCorrect": false },
+      { "text": "England", "isCorrect": false },
+      { "text": "India", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which NBA player is known as 'King James'?",
+    "options": [
+      { "text": "LeBron James", "isCorrect": true },
+      { "text": "Kobe Bryant", "isCorrect": false },
+      { "text": "Michael Jordan", "isCorrect": false },
+      { "text": "Shaquille O'Neal", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which sport uses terms like birdie, eagle, and bogey?",
+    "options": [
+      { "text": "Golf", "isCorrect": true },
+      { "text": "Tennis", "isCorrect": false },
+      { "text": "Squash", "isCorrect": false },
+      { "text": "Badminton", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "options": [
+      { "text": "Brazil", "isCorrect": true },
+      { "text": "China", "isCorrect": false },
+      { "text": "UK", "isCorrect": false },
+      { "text": "USA", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which country dominates table tennis championships?",
+    "options": [
+      { "text": "China", "isCorrect": true },
+      { "text": "Japan", "isCorrect": false },
+      { "text": "South Korea", "isCorrect": false },
+      { "text": "Germany", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What color flag is waved to start a Formula 1 race?",
+    "options": [
+      { "text": "Green", "isCorrect": true },
+      { "text": "Red", "isCorrect": false },
+      { "text": "Yellow", "isCorrect": false },
+      { "text": "Blue", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which sport’s trophy is called the Vince Lombardi Trophy?",
+    "options": [
+      { "text": "American Football", "isCorrect": true },
+      { "text": "Basketball", "isCorrect": false },
+      { "text": "Baseball", "isCorrect": false },
+      { "text": "Ice Hockey", "isCorrect": false }
+    ]
+  }
 ]

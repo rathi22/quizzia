@@ -1,14 +1,28 @@
-const express = require("express");
-const path = require("path");
-const fs = require("fs");
-const cors = require("cors");
+import express from "express";
+import path from "path";
+import fs from "fs";
+import cors from "cors";
+import { v4 as uuidv4 } from "uuid";
+import { fileURLToPath } from "url";
+import { createServer } from "http";
+import { Server } from "socket.io";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 5000; 
+const httpServer = createServer(app);
+const io = new Server(httpServer, {
+  cors: { origin: "*" },
+});
 
-app.use(cors()); 
+app.use(cors());
+app.use(express.json());
 
-// Utility to shuffle array
+// In-memory storage
+const rooms = {};
+
+// Utility: shuffle
 function shuffleArray(arr) {
   return arr
     .map((item) => ({ item, sort: Math.random() }))
@@ -16,49 +30,104 @@ function shuffleArray(arr) {
     .map(({ item }) => item);
 }
 
-// Supported categories and their data files
-const categoryFiles = {
-  Planets: "planets.json",
-  Animals: "animals.json",
-  Math: "math.json",
-  Science: "science.json",
-  Sports: "sports.json",
-};
-
-// API endpoint to get quiz questions
-app.get("/api/quiz", (req, res) => {
-  const category = req.query.category;
-  if (!category || !categoryFiles[category]) {
-    return res.status(400).json({ error: "Invalid category" });
-  }
-
-  const filePath = path.join(__dirname, "data", categoryFiles[category]);
-  let rawData;
+// Utility: load questions
+function loadQuestions(category) {
   try {
-    rawData = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const filePath = path.join(__dirname, "data", `${category}.json`);
+    const data = fs.readFileSync(filePath, "utf-8");
+    return shuffleArray(JSON.parse(data));
   } catch (err) {
-    return res.status(500).json({ error: "Could not load questions" });
+    console.error(`❌ Error loading questions for ${category}:`, err);
+    return [];
   }
+}
 
-  // Format and shuffle questions
-  const formatted = rawData.map((q) => ({
-    question: q.question,
-    options: shuffleArray(
-      q.options.map((opt) => ({
-        text: opt,
-        isCorrect: opt === q.answer,
-      }))
-    ),
-  }));
+// --- Create Room ---
+app.post("/api/room", (req, res) => {
+  const { name } = req.body;
+  const roomId = uuidv4().slice(0, 6).toUpperCase();
 
-  const questions = shuffleArray(formatted).slice(0, 10);
+  rooms[roomId] = {
+    host: name,
+    players: [{ name, score: 0 }],
+    started: false,
+    category: null,
+    questions: [],
+  };
 
-  res.json({ questions });
+  res.json({ roomId });
 });
 
-// Serve static files if needed (for deployment)
-// app.use(express.static(path.join(__dirname, "../client/build")));
+// --- Join Room ---
+app.post("/api/room/:roomId/join", (req, res) => {
+  const { roomId } = req.params;
+  const { name } = req.body;
 
-app.listen(PORT, () => {
-  console.log(`Quiz server running on port ${PORT}`);
+  if (!rooms[roomId]) {
+    return res.status(404).json({ error: "Room not found" });
+  }
+
+  rooms[roomId].players.push({ name, score: 0 });
+  res.json({ roomId });
+});
+
+// --- Socket.io ---
+io.on("connection", (socket) => {
+  console.log("🔌 User connected", socket.id);
+
+  socket.on("join_room", ({ roomId, name }) => {
+    socket.join(roomId);
+    if (rooms[roomId]) {
+      io.to(roomId).emit("room_update", rooms[roomId]);
+    }
+  });
+
+  socket.on("start_game", ({ roomId, category }) => {
+    const room = rooms[roomId];
+    if (!room) return;
+
+    room.started = true;
+    room.category = category;
+
+    // shuffle and take only first 10
+    const allQuestions = loadQuestions(category);
+    room.questions = allQuestions.slice(0, 10);
+
+    console.log(`✅ Selected ${room.questions.length} questions for ${category}`);
+
+    const payload = {
+      roomId,
+      category: room.category,
+      players: room.players,
+      questions: room.questions,
+    };
+
+    io.to(roomId).emit("game_started", payload);
+  });
+
+
+  socket.on("update_score", ({ roomId, name, score }) => {
+    const room = rooms[roomId];
+    if (!room) return;
+    const player = room.players.find((p) => p.name === name);
+    if (player) player.score = score;
+    io.to(roomId).emit("leaderboard_update", room.players);
+  });
+
+  socket.on("finish_quiz", ({ roomId, name, score }) => {
+    const room = rooms[roomId];
+    if (!room) return;
+    const player = room.players.find((p) => p.name === name);
+    if (player) player.score = score;
+    io.to(roomId).emit("leaderboard_update", room.players);
+  });
+
+  socket.on("disconnect", () => {
+    console.log("🔌 User disconnected", socket.id);
+  });
+});
+
+const PORT = process.env.PORT || 5000;
+httpServer.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
